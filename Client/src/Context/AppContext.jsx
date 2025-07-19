@@ -3,20 +3,23 @@ import { createContext, useContext, useState } from "react";
 export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
-  const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [isSeller, setIsSeller] = useState(false);
 
   const value = {
-   navigate,
-   user,
-   setUser,
-   isSeller
+    user,
+    setUser,
+    isSeller,
+    setIsSeller, // Added missing setter
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 
 export const useAppContext = () => {
-  return useContext(AppContext);
+  const context = useContext(AppContext);
+  if (context === undefined) {
+    throw new Error("useAppContext must be used within an AppContextProvider");
+  }
+  return context;
 };
