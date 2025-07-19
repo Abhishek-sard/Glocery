@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Logo from "../assets/logo.svg";
 
 const Navbar = () => {
   const navLinks = [
@@ -34,13 +36,13 @@ const Navbar = () => {
         }`}
       >
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2" aria-label="Home">
+        <NavLink to="/">
           <img
-            src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoWhite.svg"
-            alt="Company Logo"
+            src={Logo}
+            alt=" Logo"
             className={`h-9 ${isScrolled && "invert opacity-80"}`}
           />
-        </a>
+        </NavLink>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-4 lg:gap-8">
