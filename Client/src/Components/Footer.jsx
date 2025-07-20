@@ -16,7 +16,7 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                 </svg>
               </span>
-              GauBazar.com
+              SellBazar.com
             </h3>
             <p className="text-gray-400 mb-4">
               Nepal's fastest growing online marketplace. Buy and sell everything from used cars to mobile phones and computers, or search for property, jobs and more.
@@ -69,7 +69,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <FaMapMarkerAlt className="text-blue-400 mt-1 mr-2 flex-shrink-0" />
-                <span className="text-gray-400">Kathmandu, Nepal</span>
+                <span className="text-gray-400">Inurawa, Nepal</span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="text-blue-400 mr-2 flex-shrink-0" />
@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="text-blue-400 mr-2 flex-shrink-0" />
-                <span className="text-gray-400">info@gaubazar.com</span>
+                <span className="text-gray-400">info@SellBazar.com</span>
               </li>
               <li className="flex items-center">
                 <FaClock className="text-blue-400 mr-2 flex-shrink-0" />
@@ -110,7 +110,7 @@ const Footer = () => {
         {/* Copyright and Bottom Links */}
         <div className="pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} GauBazar.com. All rights reserved.
+            &copy; {new Date().getFullYear()} SellBazar.com. All rights reserved.
           </div>
           <div className="flex space-x-4">
             <a href="#" className="text-gray-400 hover:text-blue-400 text-sm">Privacy Policy</a>

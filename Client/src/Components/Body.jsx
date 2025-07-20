@@ -1,7 +1,25 @@
 import React from 'react';
 import { FaSearch, FaArrowRight } from 'react-icons/fa';
+import Lactop from '../assets/Lactop.jpg';
+import Lactop2 from '../assets/Lactop2.jpg';
+import Lactop3 from '../assets/Lactop3.jpg';
+import Lactop4 from '../assets/Lactop4.jpg';
+import Lactop5 from '../assets/Lactop5.jpg';
+import Lactop6 from '../assets/Lactop6.jpg';
+
 
 const Body = () => {
+
+
+  const Lactops = [
+    {id:1, image: Lactop, name: "Laptop 1", price: "Rs. 50,000", location: "Kathmandu", condition: "New",},
+    {id:2, image: Lactop2, name: "Laptop 2", price: "Rs. 60,000", location: "Kathmandu", condition: "Used",},
+    {id:3, image: Lactop3, name: "Laptop 3", price: "Rs. 70,000", location: "Kathmandu", condition: "New",},
+    {id:4, image: Lactop4, name: "Laptop 4", price: "Rs. 80,000", location: "Kathmandu", condition: "Used",},
+    {id:5, image: Lactop5, name: "Laptop 5", price: "Rs. 90,000", location: "Kathmandu", condition: "New",},
+    {id:6, image: Lactop6, name: "Laptop 6", price: "Rs. 100,000", location: "Kathmandu", condition: "Used",},
+
+  ];
   return (
     <div className="relative bg-gray-50">
       {/* Hero Section */}
@@ -90,25 +108,25 @@ const Body = () => {
       </div>
 
       {/* Featured Listings */}
-      <div className="py-12 bg-gray-50">
+    <div className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Recently Added Items
+              Featured Laptops
             </h2>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Check out the latest listings in your area
+              High-quality laptops at competitive prices
             </p>
           </div>
 
           <div className="mt-10">
             <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3">
-              {[1, 2, 3, 4, 5, 6].map((item) => (
-                <div key={item} className="relative bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              {Lactops.map((laptop) => (
+                <div key={laptop.id} className="relative bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="aspect-w-3 aspect-h-2 bg-gray-200 rounded-lg overflow-hidden">
                     <img
-                      src={`https://source.unsplash.com/random/300x200?item=${item}`}
-                      alt="Listing"
+                      src={laptop.image}
+                      alt={laptop.name}
                       className="w-full h-full object-center object-cover"
                     />
                     <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs font-medium px-2 py-1 rounded">
@@ -117,14 +135,22 @@ const Body = () => {
                   </div>
                   <div className="mt-4">
                     <h3 className="text-lg font-medium text-gray-900">
-                      Product {item} - Great condition
+                      {laptop.name} - {laptop.condition} condition
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">
                       Kathmandu, Nepal
                     </p>
                     <p className="mt-2 text-lg font-semibold text-blue-600">
-                      Rs. {item * 10000}
+                      Rs. {laptop.price.toLocaleString()}
                     </p>
+                    <div className="mt-3 flex justify-between items-center">
+                      <button className="text-sm text-blue-600 hover:text-blue-800 font-medium">
+                        View Details
+                      </button>
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-md text-sm">
+                        Add to Cart
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -133,7 +159,7 @@ const Body = () => {
 
           <div className="mt-10 text-center">
             <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-              View All Listings
+              View All Laptops
             </button>
           </div>
         </div>
@@ -141,5 +167,7 @@ const Body = () => {
     </div>
   );
 };
+    
+
 
 export default Body;
