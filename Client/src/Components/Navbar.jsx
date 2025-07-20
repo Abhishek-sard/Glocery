@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import { FaPhone, FaPen, FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import { FiHome, FiShoppingBag, FiLayers, FiBriefcase, FiTruck, FiSettings, FiLogIn } from "react-icons/fi";
 

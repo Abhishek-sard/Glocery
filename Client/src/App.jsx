@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Body from './Components/Body';
 import BodyPart2 from './Components/BodyPart2';
