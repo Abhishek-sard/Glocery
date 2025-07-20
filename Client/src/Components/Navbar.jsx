@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="relative">
               <input
                 type="text"
-                placeholder="I'm looking for..."
+                placeholder="Search"
                 className="w-full border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button className="absolute right-0 top-0 h-full bg-blue-600 text-white px-4 rounded-r-md md:block hidden">
@@ -92,13 +92,13 @@ const Navbar = () => {
                 </svg>
               </button>
               <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden group-hover:block">
-                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Cars</a>
-                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Clothing and Shoes</a>
+                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Headphone</a>
+                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Keyboards</a>
                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Computers</a>
-                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Electric cars</a>
-                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Electric Scooter</a>
+                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Wires</a>
+                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Fans </a>
                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Electronics</a>
-                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Houses</a>
+                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Television</a>
                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Laptop</a>
                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Mobile Accessories</a>
                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Mobile Phones</a>
@@ -134,7 +134,7 @@ const Navbar = () => {
                 </a>
                 <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiShoppingBag className="text-xl" />
-                  <span className="text-xs mt-1">Vehicles</span>
+                  <span className="text-xs mt-1">Customize</span>
                 </a>
                 <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiLayers className="text-xl" />
