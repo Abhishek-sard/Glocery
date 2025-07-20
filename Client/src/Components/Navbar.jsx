@@ -132,17 +132,17 @@ const Navbar = () => {
                   <FiHome className="text-xl" />
                   <span className="text-xs mt-1">Home</span>
                 </a>
-                <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
+                <a href="../pages/Custom" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiShoppingBag className="text-xl" />
                   <span className="text-xs mt-1">Customize</span>
                 </a>
                 <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiLayers className="text-xl" />
-                  <span className="text-xs mt-1">Property</span>
+                  <span className="text-xs mt-1">About</span>
                 </a>
                 <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiBriefcase className="text-xl" />
-                  <span className="text-xs mt-1">Jobs</span>
+                  <span className="text-xs mt-1">New Arrivals</span>
                 </a>
                 <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiTruck className="text-xl" />
