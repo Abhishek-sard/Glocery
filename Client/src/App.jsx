@@ -22,6 +22,7 @@ import Aboutsite from "./pages/About/Aboutsite";
 
 
 //components for New Arrivals pages
+import NewArrival from "./pages/Arrivals/NewArrival";
 
 
 
@@ -61,6 +62,14 @@ function About () {
   )
 }
 
+
+//function of New Arrival page
+function Arrivals () {
+  return(
+    <NewArrival/>
+  )
+}
+
 function App() {
   return(
     <Router>
@@ -69,6 +78,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/Custom" element={<Custom/>}/>
         <Route path="/About" element={<About/>}/>
+        <Route path="/Arrivals" element={<Arrivals/>}/>
       </Routes>
       <Footer/>
     </Router>

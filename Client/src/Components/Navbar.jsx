@@ -141,7 +141,7 @@ const Navbar = () => {
                   <FiLayers className="text-xl" />
                   <span className="text-xs mt-1">About</span>
                 </a>
-                <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
+                <a href="/Arrivals" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiBriefcase className="text-xl" />
                   <span className="text-xs mt-1">New Arrivals</span>
                 </a>
