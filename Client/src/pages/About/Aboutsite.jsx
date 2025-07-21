@@ -1,27 +1,30 @@
 import React from 'react';
 import { FaUsers, FaHandshake, FaMapMarkerAlt, FaAward } from 'react-icons/fa';
-
+import Shop from '../../assets/Shop.jpg';
+import Seller1 from '../../assets/Seller1.jpg';
+import Seller2 from '../../assets/Seller2.jpg';
+import Seller3 from '../../assets/Seller3.jpg';
 const Aboutsite = () => {
   const teamMembers = [
     {
       id: 1,
       name: 'Kp oli',
       role: 'Founder & CEO',
-      image: '/team1.jpg',
+      image: Seller1,
       bio: 'Tech enthusiast with 10+ years in e-commerce'
     },
     {
       id: 2,
       name: 'Prachanda',
+      image: Seller2,
       role: 'Marketing Director',
-      image: '/team2.jpg',
       bio: 'Digital marketing specialist and brand strategist'
     },
     {
       id: 3,
       name: 'Sher Bhadhur ',
+      image: Seller3,
       role: 'Tech Lead',
-      image: '/team3.jpg',
       bio: 'Mechenical '
     }
   ];
@@ -58,7 +61,7 @@ const Aboutsite = () => {
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 lg:pl-12">
               <img 
-                src="/about-story.jpg" 
+                src={Shop} 
                 alt="SellBazar team working" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
