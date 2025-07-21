@@ -17,6 +17,7 @@ import Customize from "./pages/Custom/Customize";
 
 
 //components for About pages
+import Aboutsite from "./pages/About/Aboutsite";
 
 
 
@@ -53,6 +54,13 @@ function Custom () {
   );
 }
 
+//function of About page
+function About () {
+  return(
+    <Aboutsite/>
+  )
+}
+
 function App() {
   return(
     <Router>
@@ -60,6 +68,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Custom" element={<Custom/>}/>
+        <Route path="/About" element={<About/>}/>
       </Routes>
       <Footer/>
     </Router>

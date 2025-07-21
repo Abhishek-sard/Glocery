@@ -137,7 +137,7 @@ const Navbar = () => {
                   <FiShoppingBag className="text-xl" />
                   <span className="text-xs mt-1">Customize</span>
                 </a>
-                <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
+                <a href="/About" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiLayers className="text-xl" />
                   <span className="text-xs mt-1">About</span>
                 </a>
