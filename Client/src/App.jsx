@@ -29,9 +29,7 @@ import NewArrival from "./pages/Arrivals/NewArrival";
 
 
 //components for For Sale pages
-
-
-
+import ForSales from "./pages/Sales/ForSales";
 
 
 //components for Services pages
@@ -70,6 +68,14 @@ function Arrivals () {
   )
 }
 
+//function for Sales
+
+function Sales () {
+  return(
+    <ForSales/>
+  );
+}
+
 function App() {
   return(
     <Router>
@@ -79,6 +85,7 @@ function App() {
         <Route path="/Custom" element={<Custom/>}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/Arrivals" element={<Arrivals/>}/>
+        <Route path="/Sales" element={<Sales/>}/>
       </Routes>
       <Footer/>
     </Router>
