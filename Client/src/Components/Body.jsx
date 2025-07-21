@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import { FaSearch, FaArrowRight } from 'react-icons/fa';
 import Lactop from '../assets/Lactop.jpg';
 import Lactop2 from '../assets/Lactop2.jpg';

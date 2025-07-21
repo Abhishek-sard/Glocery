@@ -7,17 +7,12 @@ import {
   FaPalette,
   FaCheckCircle,
 } from "react-icons/fa";
-import Lactop from "../assets/Lactop.jpg";
-import Lactop2 from "../assets/Lactop2.jpg";
-import Lactop3 from "../assets/Lactop3.jpg";
-import Lactop4 from "../assets/Lactop4.jpg";
-import Lactop5 from "../assets/Lactop5.jpg";
-import Lactop6 from "../assets/Lactop6.jpg";
+
 const Customize = () => {
   const laptops = [
     {
       id: 1,
-      image: Lactop,
+      // image: Lactop,
       name: "Laptop 1",
       price: "Rs. 50,000",
       location: "Kathmandu",
@@ -25,7 +20,7 @@ const Customize = () => {
     },
     {
       id: 2,
-      image: Lactop2,
+      // image: Lactop2,
       name: "Laptop 2",
       price: "Rs. 60,000",
       location: "Pokhara",
@@ -33,7 +28,7 @@ const Customize = () => {
     },
     {
       id: 3,
-      image: Lactop3,
+      // image: Lactop3,
       name: "Laptop 3",
       price: "Rs. 70,000",
       location: "Biratnagar",
@@ -41,7 +36,7 @@ const Customize = () => {
     },
     {
       id: 4,
-      image: Lactop4,
+      // image: Lactop4,
       name: "Laptop 4",
       price: "Rs. 80,000",
       location: "Lalitpur",
@@ -50,7 +45,7 @@ const Customize = () => {
 
     {
       id: 5,
-      image: Lactop5,
+      // image: Lactop5,
       name: "Laptop 5",
       price: "Rs. 90,000",
       location: "Bhaktapur",
@@ -58,7 +53,7 @@ const Customize = () => {
     },
     {
       id: 6,
-      image: Lactop6,
+      // image: Lactop6,
       name: "Laptop 6",
       price: "Rs. 100,000",
       location: "Kathmandu",

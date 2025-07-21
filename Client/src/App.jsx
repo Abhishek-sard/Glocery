@@ -10,9 +10,8 @@ import Footer from "./Components/Footer";
 import Body from "./Components/Body";
 import BodyPart2 from "./Components/BodyPart2";
 
-
-
 //components for Custom pages
+import Customize from "./pages/Custom/Customize";
 
 
 
@@ -37,7 +36,7 @@ import BodyPart2 from "./Components/BodyPart2";
 
 
 
-
+//function of Home page
 function Home () {
   return(
     <>
@@ -47,17 +46,26 @@ function Home () {
   );
 }
 
+//function of Custom page
+function Custom () {
+  return(
+    <Customize/>
+  );
+}
 
 function App() {
   return(
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/" elements={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Custom" element={<Custom/>}/>
       </Routes>
+      <Footer/>
     </Router>
   );
 }
+
 
 
 export default App;

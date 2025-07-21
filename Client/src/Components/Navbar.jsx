@@ -129,11 +129,11 @@ const Navbar = () => {
             {/* Navigation icons */}
             <div className="flex overflow-x-auto w-full md:w-auto py-2 md:py-0 hide-scrollbar">
               <div className="flex space-x-6 md:space-x-8 mx-auto">
-                <a href="#" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
+                <a href="/" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiHome className="text-xl" />
                   <span className="text-xs mt-1">Home</span>
                 </a>
-                <a href="../pages/Custom" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
+                <a href="/Custom" className="flex flex-col items-center text-gray-700 hover:text-blue-600 min-w-[60px]">
                   <FiShoppingBag className="text-xl" />
                   <span className="text-xs mt-1">Customize</span>
                 </a>
